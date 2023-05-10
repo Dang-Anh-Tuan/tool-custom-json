@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        height: 500px;
+        width: 100vw;
+        background: #ccc;
+        padding: 20px;
+        gap: 20px;
+      }
+      .right {
+        overflow-y: auto;
+        background: #fff;
+      }
+      .right,
+      .left {
+        width: 50%;
+        height: 100%;
+      }
+      .left {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <label for="type">Type</label>
+        <select name="type" id="type">
+          <option value="p_bold" selected>p_bold</option>
+          <option value="p_title">p_title</option>
+          <option value="p">p</option>
+          <option value="stepTitle">stepTitle</option>
+          <option value="stepImg">stepImg</option>
+          <option value="list">list</option>
+        </select>
+        <p>Text</p>
+        <textarea name="" id="content" cols="30" rows="10"></textarea>
+      </div>
+      <div class="right">
+        <pre id="result"></pre>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
