@@ -37,7 +37,7 @@ function setContent() {
       break;
     case "list":
       const textContentArr = textContent?.split("\n");
-      content = `<ol class=\"list_disc_inside\">${textContentArr.map((item) => `<li>${item}</li>`).join("")}</ol>`;
+      content = `<ol class=\\"list_disc_inside\\">${textContentArr.map((item) => `<li>${item}</li>`).join("")}</ol>`;
       break;
   }
 }
